@@ -6,8 +6,8 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
     server: {
-      port: 3000,
-      host: '0.0.0.0',
+      host: true,
+      allowedHosts: ['aqua-quest-guardians-of-the-deep.onrender.com']
     },
     plugins: [react()],
     define: {
